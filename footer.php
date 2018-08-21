@@ -16,7 +16,7 @@
 
 </div><!-- #content -->
 
-<footer id="colophon" class="site-footer" role="contentinf">
+<footer id="colophon" class="site-footer" role="contentinfo">
     <div class="wrap">
        <p>&copy <?php echo Date('Y');?> - <?php bloginfo('name');?></p> 
     </div><!-- .wrap -->
