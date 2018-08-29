@@ -1,0 +1,59 @@
+// _mixins.scss
+
+// Media Queries
+
+@mixin phone {
+    @media (max-width: 599px) { @content; }
+  }
+@mixin tablet-sm {
+  @media (min-width: 600px) { @content; }
+}
+@mixin tablet-lg {
+  @media (min-width: 900px) { @content; }
+}
+@mixin desktop {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin desktop-lg {
+  @media (min-width: 1800px) { @content; }
+}
+
+//Center Items without changing top or bottom margin. 
+@mixin push--auto {
+  margin: { 
+      left: auto;
+      right: auto;
+  }
+}
+
+//Image Aspect Ratio
+
+//Example: 
+
+// div {
+//   @include responsive-ratio(16,9);
+// }
+
+@mixin responsive-ratio($x,$y, $pseudo: false) {
+  $padding: unquote( ( $y / $x ) * 100 + '%' );
+  @if $pseudo {
+      &:before {
+          @include pseudo($pos: relative);
+          width: 100%;
+          padding-top: $padding;
+      }
+  } @else {
+      padding-top: $padding;
+  }
+}
+
+// Placeholder edit
+
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+

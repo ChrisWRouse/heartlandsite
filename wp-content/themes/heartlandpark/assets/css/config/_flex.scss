@@ -1,0 +1,106 @@
+// _flex.scss
+
+.flex-container {
+    display: flex;
+    max-width: 1138px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+//Justify Content
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-sb {
+    justify-content: space-between;
+}
+
+.justify-content-sa {
+    justify-content: space-around;
+}
+
+// Align Content
+
+.align-content-start {
+    align-content: flex-start;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-content-end {
+    align-content: flex-end;
+}
+
+.align-content-stretch {
+    align-content: stretch;
+}
+
+.align-content-sb {
+    align-content: space-between;
+}
+
+.align-content-sa {
+    align-content: space-around;
+}
+
+// Align Items
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.align-items-stretch {
+    align-items: stretch;
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+// Align Child Item 
+
+.align-item-start {
+    align-self: flex-start;
+}
+
+.align-item-center {
+    align-self: center;
+}
+
+.align-item-end {
+    align-self: flex-end;
+}
+
+// Justify Child Item Hack
+
+.justify-start {
+    margin-right: auto;
+}
+
+.justify-end {
+    margin-left: auto;
+}
+
+.justify-center {
+    margin: 0 auto;
+}

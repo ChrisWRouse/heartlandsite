@@ -1,0 +1,52 @@
+// _artist-info.scss
+
+.artist-info {
+    width: 100%; 
+    background: $white;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.artist-info-container {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 145px;
+}
+
+.artist-bio-container {
+
+
+    .body-text {
+        margin: 15px 0 30px;
+        width: 81%;
+    }
+
+    h1 {
+        padding: 0;
+        margin: 0;
+        width: 60%;
+    }
+
+}
+
+.artist-content-wrap {
+    width: 48.5%;
+}
+
+.artist-image-wrap {
+    position: static;
+    width: 48.5%;
+    align-self: stretch;
+    background-size: cover;
+    background-image: url("../img/brent-faiyaz.jpg");
+    
+    img {
+        width: 100%;
+    }
+}
+
+

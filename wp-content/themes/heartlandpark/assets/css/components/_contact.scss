@@ -1,0 +1,136 @@
+// _contact.scss
+.contact {
+    width: 100%;
+    height: 720px; 
+    overflow: hidden; 
+    background: $white;
+    background-image: url("../img/contact-image.jpg");
+    background-size: 522px auto;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.contact-container {
+    display: flex;
+    width: 1138px;
+    margin: 0 auto;
+    max-height: 720px;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-top: 65px;
+}
+
+.form-container {
+    width: 552px;
+
+    form {
+        margin-top: 45px;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+        width: 80%;
+    }
+
+    h1 {
+        padding: 15px 0 10px 0;
+        margin: 0;
+    }
+
+    input, select {
+        background: #E8E8E8;
+        border: none; 
+        width: 255px;
+        height: 45px;
+        text-indent: 20px;
+        font-size: 14px;
+
+        @include input-placeholder {
+            color: $black;
+            opacity: 1; /* Firefox */
+            font-weight: bold;
+        }
+    }
+
+    textarea {
+        grid-column: 1/3;
+        height: 136px;
+        background: #E8E8E8;
+        border: none;
+        text-indent: 20px;
+        font-size: 14px;
+        padding-top: 20px;
+        box-sizing: border-box;
+
+        @include input-placeholder {
+            color: $black;
+            opacity: 1; /* Firefox */
+            font-weight: bold;
+        }
+    }
+}
+
+.contact-form {
+    color: $black;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 37px;
+}
+
+/*Customize Select*/
+.custom-select {
+    position: relative;
+  }
+  .custom-select select {
+    display: none; 
+  }
+  .select-selected {
+    background-color: #E8E8E8;
+    border: none;
+    height: 47px;
+    font-size: 14px;
+  }
+  
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 22px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: $black transparent transparent transparent;
+  }
+  
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent $black transparent;
+    top: 15px;
+  }
+  
+  .select-items div,.select-selected {
+    color: $black;
+    padding: 15px 16px;
+    vertical-align: middle;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
+  .select-items {
+    position: absolute;
+    vertical-align: middle;
+    //padding-top: 8px;
+    background-color: $cool-gray;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  .select-hide {
+    display: none;
+  }
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }

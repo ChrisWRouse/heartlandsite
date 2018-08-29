@@ -1,0 +1,134 @@
+// _typography.scss
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC:700|Changa|Exo|Homenaje|Jockey+One|Khand:600|Oswald|PT+Sans+Narrow|Rajdhani:700|Roboto|Roboto+Condensed|Russo+One|Squada+One|Yanone+Kaffeesatz');
+
+$font-two: 'Roboto', sans-serif;
+$font-three: 'PT Sans Narrow', sans-serif;
+$font-four: 'Yanone Kaffeesatz', sans-serif;
+$font-five: 'Khand', sans-serif;
+$font-six: 'Homenaje', sans-serif;
+
+// * {
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+// }
+
+body {
+    font-family: $font-six;
+}
+
+.no-decoration {
+    text-decoration: none;
+}
+
+.white-text {
+    color: $white;
+}
+
+.black-text {
+    color: $black;
+}
+
+.cyan-text {
+    color: $cyan;
+}
+
+.red-text {
+    color: $red;
+}
+
+
+.hero-text {
+    font-weight: bold;
+    font-size: 65px;
+    letter-spacing: 0.73px; 
+    line-height: 76px;
+    color: $white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: $font-two;
+} 
+
+[class*=header-] {
+    
+}
+
+.header-text {
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 50px;
+
+    @include phone {
+        font-size: 2em;
+        line-height: 1.25em;
+    }
+
+    @include tablet-sm {
+        font-size: 2em;
+        line-height: 1.25em;
+    }
+
+    @include tablet-lg {
+        font-size: 2.5em;
+        line-height: 1.275em;
+    }
+
+    @include desktop {
+        font-size: 3em;
+        line-height: 1.05em;
+    }
+}
+
+.header-two-text {
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 40px;
+}
+
+.header-three-text {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height:25px;
+}
+
+.button-text {
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    color: $white;
+}
+
+.body-text {
+    font-weight: normal;
+    font-family: $font-two;
+    letter-spacing: 0;
+
+    @include phone {
+        font-size: 1em;
+        line-height: 1.25em;
+    }
+
+    @include tablet-sm {
+        font-size: 1em;
+        line-height: 1.25em;
+    }
+
+    @include tablet-lg {
+        font-size: 1em;
+        line-height: 1.375em;
+    }
+
+    @include desktop {
+        font-size: 1em;
+        line-height: 1.375em;
+    }
+    
+}
+
+
+

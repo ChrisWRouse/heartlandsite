@@ -1,0 +1,99 @@
+// _navigation.scss
+
+body {
+    background-color: black;
+}
+
+.grid {
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 1138px;
+    height: 5000px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: absolute;
+    z-index: 2000;
+    opacity: .3;
+    grid-gap: 38px;
+    display: none;
+}
+
+.col {
+    background: $cyan;
+}
+
+.navbar {
+    width: 100%;
+    height: 90px; 
+    position: fixed;
+    background-color: rgba(255,255,255,.85);
+    top: 0;
+    left: 0;
+    z-index: 1500;
+    border-bottom: 3px solid $red;
+}
+
+.nav-container {
+    margin: 0 auto;
+    height: 83px;
+    position: relative;
+    z-index: 1500;
+}
+
+
+.nav-items {
+    padding: 5px 0 0 0px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: right;
+    
+    li {
+        margin: 0 40px 3px 0px;
+        
+        padding: 10px 0;
+        display: flex;
+        font-weight: 900;
+        vertical-align: middle;
+        text-align: center;
+        cursor: pointer;
+
+        a {
+            margin: 0 0 0 0;
+            font-weight: 200;
+            font-size: 19px;
+            line-height: 20px;
+            vertical-align: middle;
+            letter-spacing: .5px;
+            font-family: $font-six;
+            text-decoration: none;
+            padding: 0;
+            color: $black;
+            transition: color 1s ease;
+            transition: font-size 1s ease;
+        }
+
+        &:hover a {
+            color: $red;
+            font-size: 1.3em;
+        }
+
+        
+    }
+
+    .menu-item-has-children {
+    
+        ul {
+            padding: 0;
+            margin: 0;
+            display: none;
+            position: absolute;
+            top: 0;
+        }
+    }
+}
+

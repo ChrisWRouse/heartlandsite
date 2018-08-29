@@ -1,0 +1,70 @@
+// _new-releases.scss
+
+.new-releases {
+    background: $light-gray;
+    width: 100%;
+    
+}
+
+.new-releases-container {
+    width: 100vw;
+    
+    text-align: center;
+}
+
+.new-releases-description {
+    padding: 70px 0;
+
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+}
+
+.new-releases-text {
+    width: 570px;
+    margin: 10px auto 0;
+   
+}
+
+.new-releases-card {
+    width: 548px !important;
+    height: 264px;
+    display: flex !important;
+    margin: 5px 16.5px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1005;
+}
+
+.album-art {
+   align-self: center;
+   margin: 20px;
+}
+
+.album-info {
+    text-align: left;
+    margin: 20px;
+
+    p {      
+        margin: 5px 0 5px 5px;
+    }
+
+    h2 {
+        color: $cyan;     
+        margin: 5px;
+    }
+
+    h1 {       
+        margin:5px;
+    }
+}
+
+.carousel-buttons {
+    width: 117px;
+    margin: 0px auto;
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-between; 
+}

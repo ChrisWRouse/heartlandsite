@@ -1,0 +1,60 @@
+// _buttons.scss
+.cta-button { 
+    width: 165px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 18px;
+    color: $white;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: $red;
+    transition: background-color 0.5s ease-in-out;
+    z-index: 3;
+    
+    .button-text {
+        position: relative;
+        z-index: 5;
+    }
+}
+
+.cta-button:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/button-bg4.svg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: -150px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-position 0.25s ease-in-out;
+    z-index: 4;
+}
+
+.cta-button:hover { 
+    background-color: $dark-cyan; 
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //box-shadow: 0px 6px 15px -6px rgba(4, 63, 81, .8);
+}
+
+.cta-button:hover:after { 
+    background-image: url('../img/button-bg4.svg');
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cta-button:hover > p {
+    color: $white;
+}
+
+
+

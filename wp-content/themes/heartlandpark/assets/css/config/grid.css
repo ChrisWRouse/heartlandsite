@@ -1,0 +1,22 @@
+/*
+.grid {
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 1138px;
+    height: 5000px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: absolute;
+    z-index: 2000;
+    opacity: .3;
+    grid-gap: 38px;
+    display: none;
+}
+
+.col {
+    background: $light-blue;
+}
+
+*/

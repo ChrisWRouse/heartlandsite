@@ -3,7 +3,7 @@
  * Displays header site branding
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage Heartland_Park
  * @since 1.0
  * @version 1.0
  */
@@ -30,8 +30,8 @@
 			<?php endif; ?>
 		</div><!-- .site-branding-text -->
 
-		<?php if ( ( twentyseventeen_is_frontpage() || ( is_home() && is_front_page() ) ) && ! has_nav_menu( 'top' ) ) : ?>
-		<a href="#content" class="menu-scroll-down"><?php echo twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ); ?><span class="screen-reader-text"><?php _e( 'Scroll down to content', 'twentyseventeen' ); ?></span></a>
+		<?php if ( ( heartlandpark_is_frontpage() || ( is_home() && is_front_page() ) ) && ! has_nav_menu( 'top' ) ) : ?>
+		<a href="#content" class="menu-scroll-down"><?php echo heartlandpark_get_svg( array( 'icon' => 'arrow-right' ) ); ?><span class="screen-reader-text"><?php _e( 'Scroll down to content', 'heartlandpark' ); ?></span></a>
 	<?php endif; ?>
 
 	</div><!-- .wrap -->
