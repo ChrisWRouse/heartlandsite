@@ -461,12 +461,9 @@ template {
   margin: 0 auto;
 }
 
-body {
-  font-family: "Homenaje", sans-serif;
-}
-
 .no-decoration {
   text-decoration: none;
+  color: #004057;
 }
 
 .white-text {
@@ -487,6 +484,7 @@ body {
 
 .hero-text {
   font-weight: bold;
+  font-family: "Homenaje", sans-serif;
   font-size: 65px;
   letter-spacing: 0.73px;
   line-height: 76px;
@@ -497,6 +495,7 @@ body {
 }
 
 .header-text {
+  font-family: "Homenaje", sans-serif;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 50px;
@@ -531,6 +530,7 @@ body {
 }
 
 .header-two-text {
+  font-family: "Homenaje", sans-serif;
   font-weight: bold;
   font-size: 30px;
   letter-spacing: 0;
@@ -538,6 +538,7 @@ body {
 }
 
 .header-three-text {
+  font-family: "Homenaje", sans-serif;
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 1px;
@@ -554,143 +555,38 @@ body {
   color: #fff;
 }
 
-.body-text {
+.body-text, p {
   font-weight: normal;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0;
 }
 
 @media (max-width: 599px) {
-  .body-text {
+  .body-text, p {
     font-size: 1em;
     line-height: 1.25em;
   }
 }
 
 @media (min-width: 600px) {
-  .body-text {
+  .body-text, p {
     font-size: 1em;
     line-height: 1.25em;
   }
 }
 
 @media (min-width: 900px) {
-  .body-text {
+  .body-text, p {
     font-size: 1em;
     line-height: 1.375em;
   }
 }
 
 @media (min-width: 1200px) {
-  .body-text {
+  .body-text, p {
     font-size: 1em;
     line-height: 1.375em;
   }
-}
-
-/* Slider */
-.slick-slider {
-  position: relative;
-  display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -khtml-user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.slick-list:focus {
-  outline: none;
-}
-
-.slick-list.dragging {
-  cursor: pointer;
-  cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.slick-track {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slick-track:before,
-.slick-track:after {
-  display: table;
-  content: '';
-}
-
-.slick-track:after {
-  clear: both;
-}
-
-.slick-loading .slick-track {
-  visibility: hidden;
-}
-
-.slick-slide {
-  display: none;
-  float: left;
-  opacity: .4;
-  height: 100%;
-  min-height: 1px;
-}
-
-[dir='rtl'] .slick-slide {
-  float: right;
-}
-
-.slick-slide img {
-  display: block;
-}
-
-.slick-slide.slick-loading img {
-  display: none;
-}
-
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-
-.slick-initialized .slick-slide {
-  display: block;
-}
-
-.slick-loading .slick-slide {
-  visibility: hidden;
-}
-
-.slick-vertical .slick-slide {
-  display: block;
-  height: auto;
-  border: 1px solid transparent;
-}
-
-.slick-arrow.slick-hidden {
-  display: none;
 }
 
 body {
@@ -1386,7 +1282,7 @@ body {
   line-height: 18px;
   color: #fff;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 20px/50px;
   background-color: #d42e12;
   -webkit-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
@@ -1430,5 +1326,24 @@ body {
 
 .cta-button:hover > p {
   color: #fff;
+}
+
+.facebook-feed {
+  width: 100%;
+  height: 500px;
+  background: #F6F6F6;
+}
+
+.facebook-wrapper {
+  max-width: 500px;
+  background: purple;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.post-thumbnail img {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=main.css.map */

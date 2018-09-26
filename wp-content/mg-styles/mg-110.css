@@ -1,0 +1,19 @@
+
+.slick-prev, .slick-next {
+  background: none !important;
+}
+.slick-prev::before, .slick-next::before {
+	display: none ;
+}
+button.slick-prev.slick-arrow {
+  background: url("http://localhost:8888/heartlandmotorsportspark/wp-content/plugins/maxgalleria/images/icons/arrow-style-7l-wt.png")	no-repeat scroll center center transparent !important;
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+button.slick-next.slick-arrow {
+  background: url("http://localhost:8888/heartlandmotorsportspark/wp-content/plugins/maxgalleria/images/icons/arrow-style-7r-wt.png")	no-repeat scroll center center transparent !important;
+  display: block;
+  height: 50px;
+  width: 50px;
+}

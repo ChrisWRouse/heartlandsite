@@ -3,8 +3,6 @@
 @import "config/normalize";
 @import "config/flex";
 @import "config/typography";
-@import "components/slick";
-//@import "components/slick-theme";
 @import "components/navigation";
 @import "components/hero";
 @import "components/artist-info";
@@ -13,3 +11,5 @@
 @import "components/contact";
 @import "components/footer";
 @import "components/buttons";
+@import "components/facebook-posts";
+@import "components/posts-excerpt";

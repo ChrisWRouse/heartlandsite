@@ -33,6 +33,11 @@ function heartlandpark_setup() {
 	 */
 	load_theme_textdomain( 'heartlandpark' );
 
+	// Add default posts and comments RSS feed links to head.
+	add_theme_support( 'automatic-feed-links' );
+
+	add_theme_support( 'post-thumbnails' );
+
 	/*
 	 * Let WordPress manage the document title.
 	 * By adding theme support, we declare that this theme does not use a
@@ -45,8 +50,65 @@ function heartlandpark_setup() {
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
 		'main_nav'    => __( 'Main Nav', 'heartlandpark' ),
-		'social' => __( 'Social Links Menu', 'heartlandpark' ),
+		'social' 	  => __( 'Social Links Menu', 'heartlandpark' ),
 	) );
-	
+
+	add_theme_support(
+		'post-formats', array(
+			'aside',
+			'image',
+			'video',
+			'quote',
+			'link',
+			'gallery',
+			'audio',
+		)
+	);
+
+	// Add theme support for Custom Logo.
+	add_theme_support(
+		'custom-logo', array(
+			'width'      => 250,
+			'height'     => 250,
+			'flex-width' => true,
+		)
+	);
+
+	// Add theme support for selective refresh for widgets.
+	add_theme_support( 'customize-selective-refresh-widgets' );
+
 }
 add_action( 'after_setup_theme', 'heartlandpark_setup' );
+
+// Excerpt Length Control
+function set_excerpt_length() {
+	return 65;
+}
+
+add_filter('except_length', 'set_excerpt_length');
+
+function heartlandpark_init_widgets($id) {
+	register_sidebar(array(
+		'name' => 'Sidebar',
+		'id'  => 'sidebar',
+		'before_widget'  => '<div class="sponsor-sidebar">',
+		'after_widget'   => '</div>',
+		'before_title'   => '<h4>',
+		'after_title'    => '</h4>' 
+	));
+}
+
+add_action('widgets_init','heartland_park_init-widgets');
+
+// Enque Javascript Files
+function heartland_enque_js() {
+	
+	wp_enqueue_script( 'drop-down-customize', get_template_directory_uri() .'/assets/js/drop-down-customize.js', null, null, true );
+}
+add_action('wp_enqueue_scripts', 'heartland_enque_js');
+
+
+//Customizer File
+
+require get_template_directory().'/inc/customizer.php'; 
+

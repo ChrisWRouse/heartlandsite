@@ -1,0 +1,946 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: maxgalleria-image-slider\n"
+"POT-Creation-Date: 2018-06-14 07:11-0400\n"
+"PO-Revision-Date: 2018-06-14 07:11-0400\n"
+"Last-Translator: Alan Pasho <apasho@gmail.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../EDD_SL_Plugin_Updater.php:204
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr ""
+
+#: ../EDD_SL_Plugin_Updater.php:212
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s "
+"or %5$supdate now%6$s."
+msgstr ""
+
+#: ../EDD_SL_Plugin_Updater.php:399
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#: ../EDD_SL_Plugin_Updater.php:399
+msgid "Error"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:158
+#: ../maxgalleria-slick-carousel-settings.php:308
+msgid "IMAGE OPTIONS"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:162
+#: ../maxgalleria-slick-carousel-settings.php:311
+msgid "Preset Layouts:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:180
+#: ../maxgalleria-slick-carousel-settings.php:327
+msgid "Display Border:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:188
+#: ../maxgalleria-slick-carousel-settings.php:333
+msgid "Border Thickness:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:214
+#: ../maxgalleria-slick-carousel-settings.php:358
+msgid "1 pixel"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:214
+#: ../maxgalleria-slick-carousel-settings.php:358
+msgid "border thickness 1 pixel"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:217
+#: ../maxgalleria-slick-carousel-settings.php:361
+msgid "3 pixels"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:217
+#: ../maxgalleria-slick-carousel-settings.php:361
+msgid "border thickness 3 pixels"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:220
+#: ../maxgalleria-slick-carousel-meta.php:312
+#: ../maxgalleria-slick-carousel-settings.php:364
+#: ../maxgalleria-slick-carousel-settings.php:448
+msgid "5 pixels"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:220
+#: ../maxgalleria-slick-carousel-settings.php:364
+msgid "border thickness 5 pixels"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:223
+#: ../maxgalleria-slick-carousel-settings.php:367
+msgid "7 pixels"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:223
+#: ../maxgalleria-slick-carousel-settings.php:367
+msgid "border thickness 7 pixels"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:226
+#: ../maxgalleria-slick-carousel-settings.php:370
+msgid "9 pixels"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:226
+#: ../maxgalleria-slick-carousel-settings.php:370
+msgid "border thickness 9 pixels"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:229
+#: ../maxgalleria-slick-carousel-settings.php:373
+msgid "15 pixel"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:229
+#: ../maxgalleria-slick-carousel-settings.php:373
+msgid "border thickness 15 pixels"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:237
+#: ../maxgalleria-slick-carousel-settings.php:380
+msgid "Border Color:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:246
+#: ../maxgalleria-slick-carousel-settings.php:387
+msgid "Shadow Type:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:266
+#: ../maxgalleria-slick-carousel-settings.php:406
+msgid "No shadow"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:266
+#: ../maxgalleria-slick-carousel-settings.php:406
+msgid "no shadow style"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:269
+#: ../maxgalleria-slick-carousel-settings.php:409
+msgid "Inside shadow"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:269
+#: ../maxgalleria-slick-carousel-settings.php:409
+msgid "inside shadow style"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:272
+#: ../maxgalleria-slick-carousel-settings.php:412
+msgid "Behind shadow"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:272
+#: ../maxgalleria-slick-carousel-settings.php:412
+msgid "behind shadow style"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:275
+#: ../maxgalleria-slick-carousel-settings.php:415
+msgid "Color shadow"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:275
+#: ../maxgalleria-slick-carousel-settings.php:415
+msgid "color shadow style"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:283
+#: ../maxgalleria-slick-carousel-settings.php:422
+msgid "Shadow Color:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:292
+#: ../maxgalleria-slick-carousel-settings.php:429
+msgid "Shadow Blur:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:312
+#: ../maxgalleria-slick-carousel-settings.php:448
+msgid "5 pixel blur"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:315
+#: ../maxgalleria-slick-carousel-settings.php:451
+msgid "10 pixels"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:315
+#: ../maxgalleria-slick-carousel-settings.php:451
+msgid "10 pixel blur"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:318
+#: ../maxgalleria-slick-carousel-settings.php:454
+msgid "15 pixels"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:318
+#: ../maxgalleria-slick-carousel-settings.php:454
+msgid "15 pixel blur"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:321
+#: ../maxgalleria-slick-carousel-settings.php:457
+msgid "20 pixels"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:321
+#: ../maxgalleria-slick-carousel-settings.php:457
+msgid "20 pixel blur"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:329
+#: ../maxgalleria-slick-carousel-settings.php:464
+msgid "Shadow Spread:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:349
+#: ../maxgalleria-slick-carousel-settings.php:483
+msgid "0 pixel spread"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:352
+#: ../maxgalleria-slick-carousel-settings.php:486
+msgid "1 pixel spread"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:355
+#: ../maxgalleria-slick-carousel-settings.php:489
+msgid "2 pixels spread"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:358
+#: ../maxgalleria-slick-carousel-settings.php:492
+msgid "3 pixels spread"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:365
+#: ../maxgalleria-slick-carousel-settings.php:499
+msgid "SLICK SLIDER OPTIONS"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:369
+msgid "Slider Arrows:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:444
+#: ../maxgalleria-slick-carousel-settings.php:571
+msgid "Use Custom Arrows (requires hero mode to be checked):"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:452
+#: ../maxgalleria-slick-carousel-settings.php:578
+msgid "Custom Left Arrow:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:461
+#: ../maxgalleria-slick-carousel-settings.php:587
+msgid "Custom Right Arrow:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:470
+msgid "Arrow Width"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:476
+msgid "Arrow Height"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:484
+#: ../maxgalleria-slick-carousel-settings.php:608
+msgid "Hide Arrows:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:493
+#: ../maxgalleria-slick-carousel-settings.php:615
+msgid "Accessibility:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:501
+#: ../maxgalleria-slick-carousel-settings.php:622
+msgid "Enables tabbing and arrow key navigation."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:507
+#: ../maxgalleria-slick-carousel-settings.php:627
+msgid "Number of Slides to Scroll:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:521
+#: ../maxgalleria-slick-carousel-settings.php:639
+msgid "Number of Slides to Show:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:533
+#: ../maxgalleria-slick-carousel-settings.php:650
+msgid "This is how many slides you want to show at one time."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:538
+#: ../maxgalleria-slick-carousel-settings.php:654
+msgid "Number of Rows:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:552
+msgid "Number of Sliders per Row:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:566
+msgid "Initial Slide: "
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:578
+#: ../maxgalleria-slick-carousel-settings.php:680
+msgid ""
+"Go to the Images tab and count down from the top until you reach the slide "
+"you want to start with.  Start your count with 1."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:583
+#: ../maxgalleria-slick-carousel-settings.php:684
+msgid "Adaptive Height Enabled:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:592
+#: ../maxgalleria-slick-carousel-settings.php:690
+msgid "Slider Captions Enabled:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:600
+#: ../maxgalleria-slick-carousel-settings.php:696
+msgid "Slider Image Click Enabled:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:608
+msgid "Slider Image Click Opens:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:622
+#: ../maxgalleria-slick-carousel-settings.php:714
+msgid "Open Image Link in a New Tab:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:632
+#: ../maxgalleria-slick-carousel-settings.php:721
+msgid "Disable Auto Play:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:640
+#: ../maxgalleria-slick-carousel-settings.php:727
+msgid "Auto Play Speed:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:649
+#: ../maxgalleria-slick-carousel-meta.php:909
+#: ../maxgalleria-slick-carousel-settings.php:735
+#: ../maxgalleria-slick-carousel-settings.php:937
+msgid "in seconds"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:655
+#: ../maxgalleria-slick-carousel-settings.php:739
+msgid "Container Width: (in pixels with \"px\" or as percent with \"%\")"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:669
+#: ../maxgalleria-slick-carousel-settings.php:745
+msgid "Center Mode Enabled:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:678
+#: ../maxgalleria-slick-carousel-settings.php:752
+msgid "Center Padding: (in pixels with \"px\" or as percent with \"%\")"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:692
+#: ../maxgalleria-slick-carousel-settings.php:759
+msgid "Display Dots:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:701
+#: ../maxgalleria-slick-carousel-settings.php:766
+msgid "Use Thumbnails as Dots:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:710
+#: ../maxgalleria-slick-carousel-settings.php:773
+msgid "Use Custom Dot:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:718
+#: ../maxgalleria-slick-carousel-settings.php:780
+msgid "Custom Dot:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:726
+#: ../maxgalleria-slick-carousel-settings.php:788
+msgid "Custom Dot Width"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:732
+#: ../maxgalleria-slick-carousel-settings.php:794
+msgid "Custom Dot Height"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:739
+#: ../maxgalleria-slick-carousel-settings.php:801
+msgid "Dots Vertical Position"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:752
+#: ../maxgalleria-slick-carousel-settings.php:809
+msgid "Enable Mouse Drag:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:760
+#: ../maxgalleria-slick-carousel-settings.php:815
+msgid "Fade:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:769
+#: ../maxgalleria-slick-carousel-settings.php:822
+msgid "Right to Left:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:778
+#: ../maxgalleria-slick-carousel-settings.php:829
+msgid "Infinite Scrolling:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:795
+#: ../maxgalleria-slick-carousel-settings.php:843
+msgid "Pause on Focus:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:804
+#: ../maxgalleria-slick-carousel-settings.php:850
+msgid "Pause on Hover:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:811
+#: ../maxgalleria-slick-carousel-settings.php:856
+msgid "If someone scrolls over the slider it will pause."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:816
+#: ../maxgalleria-slick-carousel-settings.php:860
+msgid "Pause on Dots Hover:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:823
+#: ../maxgalleria-slick-carousel-settings.php:866
+msgid "If someone scrolls over the dots, the slider will wait."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:826
+#: ../maxgalleria-slick-carousel-settings.php:870
+msgid "ADVANCED OPTIONS"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:831
+msgid "Edge Friction:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:844
+#: ../maxgalleria-slick-carousel-settings.php:881
+msgid "Resistance when swiping edges of non-infinite carousels"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:850
+msgid "Focus On Select:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:858
+#: ../maxgalleria-slick-carousel-settings.php:893
+msgid "Enable focus on selected (clicked) element."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:864
+msgid "Focus On Change:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:872
+#: ../maxgalleria-slick-carousel-settings.php:906
+msgid "Puts focus on slide after change."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:878
+#: ../maxgalleria-slick-carousel-settings.php:910
+msgid "Swipe To Slide:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:886
+#: ../maxgalleria-slick-carousel-settings.php:917
+msgid "Swipe to slide irrespective of slidesToScroll."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:892
+#: ../maxgalleria-slick-carousel-settings.php:922
+msgid "Move Slide with Touch:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:900
+#: ../maxgalleria-slick-carousel-settings.php:929
+msgid "Transition Speed:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:915
+#: ../maxgalleria-slick-carousel-settings.php:942
+msgid "Lazyload Technique:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:928
+#: ../maxgalleria-slick-carousel-settings.php:954
+msgid ""
+"'ondemand' will load the image as soon as you slide to it, 'progressive' "
+"loads one image after the other when the page loads."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:935
+#: ../maxgalleria-slick-carousel-settings.php:959
+msgid "Mobile First:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:942
+#: ../maxgalleria-slick-carousel-settings.php:965
+msgid "Uses mobile first calculation for responsive settings."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:947
+#: ../maxgalleria-slick-carousel-settings.php:969
+msgid "Swipe:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:954
+#: ../maxgalleria-slick-carousel-settings.php:975
+msgid ""
+"If someone is using this on a touch sensitive screen and you want them to "
+"move the images with their fingers."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:959
+msgid "Use CSS Transitions: "
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:968
+msgid "Use CSS Transformations: "
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:978
+msgid "Allow Variable Width: "
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:987
+msgid "Vertical Slide: "
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:996
+msgid "Vertical Swipe: "
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1005
+#: ../maxgalleria-slick-carousel-settings.php:1014
+msgid ""
+"Padding Between Slides: (in pixels with \"px\" or as percent with \"%\")"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1017
+msgid "When displaying single slides this should be 0."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1021
+#: ../maxgalleria-slick-carousel-settings.php:1021
+msgid "CSS3 Animations Type:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1052
+#: ../maxgalleria-slick-carousel-settings.php:1052
+msgid "Sets the speed of CSS3 animations."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1057
+#: ../maxgalleria-slick-carousel-settings.php:1056
+msgid "Wait for Animate:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1065
+#: ../maxgalleria-slick-carousel-settings.php:1064
+msgid "Ignores requests to advance the slide while animating."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1071
+msgid "Touch Threshold:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1084
+#: ../maxgalleria-slick-carousel-settings.php:1076
+msgid ""
+"To advance slides, the user must swipe a length of (1/touchThreshold) * the "
+"width of the slider."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1091
+msgid "ZIndex:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1104
+#: ../maxgalleria-slick-carousel-settings.php:1088
+msgid "Set the zIndex values for slides."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1109
+msgid "Responsive Breadk Points:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1119
+msgid ""
+"Here you can enter responsive breakpoints with specific slider settings."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1119
+msgid "Click here to view example breakpoints code."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1149
+msgid "Breakpoints respond to:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1162
+msgid "HERO SLIDER OPTIONS"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1166
+#: ../maxgalleria-slick-carousel-settings.php:1097
+msgid "Hero Slider Mode:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1174
+#: ../maxgalleria-slick-carousel-settings.php:1104
+msgid ""
+"For a full width Hero slider, check Hero Mode and enter the size of your "
+"full screen images, such as 2120 x 1120."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1179
+#: ../maxgalleria-slick-carousel-settings.php:1108
+msgid "Hero Slider Width:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1187
+#: ../maxgalleria-slick-carousel-settings.php:1114
+msgid "Hero Slider Height:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1195
+msgid "SLIDER CUSTOM CSS:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1227
+msgid "For non stop infinite scrolling use the following settings:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1229
+msgid "Number of Slides to Scroll: 1"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1230
+msgid "Disable Auto Play: unchecked"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1231
+msgid "Auto Play Speed: 0"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1232
+msgid "Transition Speed: 5"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1233
+msgid "Infinite Scrolling: checked"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1234
+msgid "CSS3 Animations: \"linear\""
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-meta.php:1236
+msgid ""
+"If you run into any issues email us at <a href=\"mailto:support@maxfoundry."
+"com\">support@maxfoundry.com</a>"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:32
+msgid "Black"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:33
+msgid "Ghost"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:34
+msgid "Kitt"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:35
+msgid "Silver"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:36
+msgid "Standard"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:40
+msgid "Borderless"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:41
+msgid "Picture Frame"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:42
+msgid "Picture Shadow"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:43
+msgid "Drop Shadow"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:44
+msgid "Inner Shade"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:45
+msgid "Slim Frame"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:46
+msgid "Custom"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:105
+msgid "Image Page"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:106
+msgid "Image Link"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:107
+msgid "Original Image"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:170
+msgid "None"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:171
+msgid "Inside"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:172
+msgid "Behind"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:174
+msgid "Color"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:200
+msgid "On Demand"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:201
+msgid "Progressive"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:205
+msgid "Window"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:206
+msgid "Slider"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-options.php:207
+msgid "Min (the smaller of the two)"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:237
+msgid "Plugin License Options"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:246
+msgid "License Key"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:250
+msgid "Enter your license key"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:260
+msgid "active"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:262
+msgid "Deactivate License"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:265
+msgid "Activate License"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:270
+msgid "Renew License"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:271
+msgid "Enter New License Key"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:279
+msgid "Expiration Date: "
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:292
+msgid "Settings saved."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:296
+msgid "Slick Slider Defaults"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:300
+msgid "Made with love with the "
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:300
+msgid " by"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:302
+msgid ""
+"These are the default settings that will be used every time you create a "
+"gallery with the Image Slider template. Each of these settings can be "
+"changed per gallery."
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:503
+msgid "Arrow Styles:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:595
+msgid "Custom Arrow Width"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:601
+msgid "Custom Arrow Height"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:666
+msgid "Number of Sliders per Row"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:674
+msgid "Initial Slide:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:702
+msgid "Slider Image Click Should Open:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:874
+msgid "Edge Friction"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:886
+msgid "Focus On Select"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:899
+msgid "Focus On Change"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:979
+msgid "Use CSS Transitions:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:986
+msgid "Use CSS Transforms:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:993
+msgid "Allow Variable Width:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:1000
+msgid "Vertical Slide:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:1007
+msgid "Vertical Swipe:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:1069
+msgid "Touch Threshold"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:1081
+msgid "ZIndex"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:1093
+msgid "Hero Slider Options"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:1120
+msgid "Slider Custom CSS:"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:1151
+msgid "Save Settings"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel-settings.php:1152
+msgid "Revert Defaults"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel.php:62
+msgid "Settings"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel.php:132
+#, php-format
+msgid ""
+"MaxGalleria is not installed/activated; therefore, the MaxGalleria Slick "
+"Slider addon will not function properly until it is. | <a href=\"%1$s\">Hide "
+"Notice</a>"
+msgstr ""
+
+#: ../maxgalleria-slick-carousel.php:201
+msgid "Slick Slider"
+msgstr ""

@@ -7,204 +7,83 @@
  * @since 1.0
  */
 
-/**
- * Add postMessage support for site title and description for the Theme Customizer.
- *
- * @param WP_Customize_Manager $wp_customize Theme Customizer object.
- */
-function heartlandpark_customize_register( $wp_customize ) {
-	$wp_customize->get_setting( 'blogname' )->transport          = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport   = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport  = 'postMessage';
+function heartland_customize_register($wp_customize) {
+	//Showcase Section
+	$wp_customize->add_section('heartlandpark_showcase', array(
+		'title' => __('Showcase', 'heartlandpark'), 
+		'description' => sprintf(__('Options for showcase', 'heartlandpark')),
+		'priority' => 130,
+	));
 
-	$wp_customize->selective_refresh->add_partial( 'blogname', array(
-		'selector' => '.site-title a',
-		'render_callback' => 'heartlandpark_customize_partial_blogname',
-	) );
-	$wp_customize->selective_refresh->add_partial( 'blogdescription', array(
-		'selector' => '.site-description',
-		'render_callback' => 'heartlandpark_customize_partial_blogdescription',
-	) );
+	$wp_customize->add_setting('showcase_image', array(
+		'default' => get_bloginfo('template_directory').'/img/hero-1.jpg',
+		'type' => 'theme_mod',
+	));
 
-	/**
-	 * Custom colors.
-	 */
-	$wp_customize->add_setting( 'colorscheme', array(
-		'default'           => 'light',
-		'transport'         => 'postMessage',
-		'sanitize_callback' => 'heartlandpark_sanitize_colorscheme',
-	) );
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'showcase_image', array(
+		'label' => __('Showcase Image', 'heartlandpark'),
+		'section' => 'heartlandpark_showcase',
+		'settings' => 'showcase_image',
+		'priority' => 1
+	)));
 
-	$wp_customize->add_setting( 'colorscheme_hue', array(
-		'default'           => 250,
-		'transport'         => 'postMessage',
-		'sanitize_callback' => 'absint', // The hue is stored as a positive integer.
-	) );
+	$wp_customize->add_setting('showcase_video', array(
+		'default' => get_bloginfo('template_directory').'/assets/video/heartland2.mp4',
+		'type' => 'theme_mod',
+	));
 
-	$wp_customize->add_control( 'colorscheme', array(
-		'type'    => 'radio',
-		'label'    => __( 'Color Scheme', 'heartlandpark' ),
-		'choices'  => array(
-			'light'  => __( 'Light', 'heartlandpark' ),
-			'dark'   => __( 'Dark', 'heartlandpark' ),
-			'custom' => __( 'Custom', 'heartlandpark' ),
-		),
-		'section'  => 'colors',
+	$wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'showcase_video', array(
+		'label' => _( 'Showcase Background Video', 'theme_textdomain' ),
+		'section' => 'heartlandpark_showcase',
+		'mime_type' => 'video',
+	  )));
+	  
+
+	$wp_customize->add_setting('showcase_heading', array(
+		'default' => __('Fastest Track in the World', 'heartlandpark'),
+		'type' => 'theme_mod'
+	));
+
+	$wp_customize->add_control('showcase_heading', array(
+		'label' => __('Heading', 'heartlandpark'),
+		'section' => 'heartlandpark_showcase',
+		'priority' => 2
+	));
+
+	$wp_customize->add_setting('showcase_text', array(
+		'default' => __('Strap your self in for excitment of top fuel dragracing at our world record holding track', 'heartland'),
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control('showcase_text', array(
+		'label' => __('Text', 'heartlandpark'),
+		'section' => 'heartlandpark_showcase',
+		'priority' => 3,
+	));
+
+	$wp_customize->add_setting('button_url', array(
+		'default' => _x('http://test.com', 'heartlandpark'),
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control('button_url', array(
+		'label' => __('Button Link', 'heartlandpark'),
+		'section' => 'heartlandpark_showcase',
+		'priority' => 4,
+	));
+
+	$wp_customize->add_setting('button_text', array(
+		'default' => _x('Read More', 'heartlandpark'),
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control('button_text', array(
+		'label' => __('Button Text', 'heartlandpark'),
+		'section' => 'heartlandpark_showcase',
 		'priority' => 5,
-	) );
-
-	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'colorscheme_hue', array(
-		'mode' => 'hue',
-		'section'  => 'colors',
-		'priority' => 6,
-	) ) );
-
-	/**
-	 * Theme options.
-	 */
-	$wp_customize->add_section( 'theme_options', array(
-		'title'    => __( 'Theme Options', 'heartlandpark' ),
-		'priority' => 130, // Before Additional CSS.
-	) );
-
-	$wp_customize->add_setting( 'page_layout', array(
-		'default'           => 'two-column',
-		'sanitize_callback' => 'heartlandpark_sanitize_page_layout',
-		'transport'         => 'postMessage',
-	) );
-
-	$wp_customize->add_control( 'page_layout', array(
-		'label'       => __( 'Page Layout', 'heartlandpark' ),
-		'section'     => 'theme_options',
-		'type'        => 'radio',
-		'description' => __( 'When the two-column layout is assigned, the page title is in one column and content is in the other.', 'heartlandpark' ),
-		'choices'     => array(
-			'one-column' => __( 'One Column', 'heartlandpark' ),
-			'two-column' => __( 'Two Column', 'heartlandpark' ),
-		),
-		'active_callback' => 'heartlandpark_is_view_with_layout_option',
-	) );
-
-	/**
-	 * Filter number of front page sections in Heartland_Park.
-	 *
-	 * @since Heartland_Park 1.0
-	 *
-	 * @param int $num_sections Number of front page sections.
-	 */
-	$num_sections = apply_filters( 'heartlandpark_front_page_sections', 4 );
-
-	// Create a setting and control for each of the sections available in the theme.
-	for ( $i = 1; $i < ( 1 + $num_sections ); $i++ ) {
-		$wp_customize->add_setting( 'panel_' . $i, array(
-			'default'           => false,
-			'sanitize_callback' => 'absint',
-			'transport'         => 'postMessage',
-		) );
-
-		$wp_customize->add_control( 'panel_' . $i, array(
-			/* translators: %d is the front page section number */
-			'label'          => sprintf( __( 'Front Page Section %d Content', 'heartlandpark' ), $i ),
-			'description'    => ( 1 !== $i ? '' : __( 'Select pages to feature in each area from the dropdowns. Add an image to a section by setting a featured image in the page editor. Empty sections will not be displayed.', 'heartlandpark' ) ),
-			'section'        => 'theme_options',
-			'type'           => 'dropdown-pages',
-			'allow_addition' => true,
-			'active_callback' => 'heartlandpark_is_static_front_page',
-		) );
-
-		$wp_customize->selective_refresh->add_partial( 'panel_' . $i, array(
-			'selector'            => '#panel' . $i,
-			'render_callback'     => 'heartlandpark_front_page_section',
-			'container_inclusive' => true,
-		) );
-	}
-}
-add_action( 'customize_register', 'heartlandpark_customize_register' );
-
-/**
- * Sanitize the page layout options.
- *
- * @param string $input Page layout.
- */
-function heartlandpark_sanitize_page_layout( $input ) {
-	$valid = array(
-		'one-column' => __( 'One Column', 'heartlandpark' ),
-		'two-column' => __( 'Two Column', 'heartlandpark' ),
-	);
-
-	if ( array_key_exists( $input, $valid ) ) {
-		return $input;
-	}
-
-	return '';
+	));
 }
 
-/**
- * Sanitize the colorscheme.
- *
- * @param string $input Color scheme.
- */
-function heartlandpark_sanitize_colorscheme( $input ) {
-	$valid = array( 'light', 'dark', 'custom' );
+add_action('customize_register', 'heartland_customize_register');
 
-	if ( in_array( $input, $valid, true ) ) {
-		return $input;
-	}
-
-	return 'light';
-}
-
-/**
- * Render the site title for the selective refresh partial.
- *
- * @since Heartland_Park 1.0
- * @see heartlandpark_customize_register()
- *
- * @return void
- */
-function heartlandpark_customize_partial_blogname() {
-	bloginfo( 'name' );
-}
-
-/**
- * Render the site tagline for the selective refresh partial.
- *
- * @since Heartland_Park 1.0
- * @see heartlandpark_customize_register()
- *
- * @return void
- */
-function heartlandpark_customize_partial_blogdescription() {
-	bloginfo( 'description' );
-}
-
-/**
- * Return whether we're previewing the front page and it's a static page.
- */
-function heartlandpark_is_static_front_page() {
-	return ( is_front_page() && ! is_home() );
-}
-
-/**
- * Return whether we're on a view that supports a one or two column layout.
- */
-function heartlandpark_is_view_with_layout_option() {
-	// This option is available on all pages. It's also available on archives when there isn't a sidebar.
-	return ( is_page() || ( is_archive() && ! is_active_sidebar( 'sidebar-1' ) ) );
-}
-
-/**
- * Bind JS handlers to instantly live-preview changes.
- */
-function heartlandpark_customize_preview_js() {
-	wp_enqueue_script( 'heartlandpark-customize-preview', get_theme_file_uri( '/assets/js/customize-preview.js' ), array( 'customize-preview' ), '1.0', true );
-}
-add_action( 'customize_preview_init', 'heartlandpark_customize_preview_js' );
-
-/**
- * Load dynamic logic for the customizer controls area.
- */
-function heartlandpark_panels_js() {
-	wp_enqueue_script( 'heartlandpark-customize-controls', get_theme_file_uri( '/assets/js/customize-controls.js' ), array(), '1.0', true );
-}
-add_action( 'customize_controls_enqueue_scripts', 'heartlandpark_panels_js' );
+?>

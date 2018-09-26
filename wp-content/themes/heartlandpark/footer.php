@@ -1,11 +1,11 @@
 <footer class="footer" role="footer">
     <div class="footer-container">
         <div class="footer-menu">
-        <img src="img/logo/heartland-motorsports-park-logo.svg" class="align-item-center" alt="Heartland Motorsports Park Logo" width="150" height="65">
+        <img src="<?php bloginfo('template_url');?>/assets/img/logo/heartland-motorsports-park-logo.svg" class="align-item-center" alt="Heartland Motorsports Park Logo" width="150" height="65">
             <ul class="footer-items">
-                <li>8521 W Fairfax Rd</li>
-                <li>Los Angeles, CA</li>
-                <li>90210</li>
+                <li>7530 SW Topeka Blvd</li>
+                <li>Topeka, KS</li>
+                <li>66619</li>
                 <li><a href="tel:1-909-505-4302" class="no-decoration" >909.505.4302</a></li>
             </ul>
         </div>
@@ -95,58 +95,6 @@
 </footer>
 <?php wp_footer()?>
 <!--Scripts-->
-
-<!--jQuery-->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
-
-
-<!-- Slick Carousel -->
-
-<script type="text/javascript" src="js/slick.js"></script>
-
- <script>
-    $(document).ready(function(){
-        $('.cards').slick({
-            centerMode: true,
-            centerPadding: '0px',
-            slidesToShow: 1,
-            appendArrows: $('.carousel-buttons'),
-            prevArrow: '<img src="img/left_controller.svg">',
-            nextArrow: '<img src="img/right_controller.svg">',
-            slideWidth: '548px',
-            variableWidth: true,
-            responsive: [
-                {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 3
-                }
-                },
-                {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
-                }
-                }
-  ]
-        });
-        $('.slick-current').css("opacity", "1");
-        $(".carousel-buttons").click(function() {
-            $('.slick-slide').css("opacity", ".4");
-            $('.slick-current').css("opacity", "1");
-        });
-
-        
-    }); 
-</script>
-
 
 <!--Google Map-->
 
@@ -347,88 +295,13 @@
         });
         // The marker, positioned at Lifted Logic
         var marker = new google.maps.Marker({position: heartland, 
-            icon: "<?php bloginfo('template_url');?>/img/location_pin.svg",
+            icon: "<?php bloginfo('template_url');?>/assets/img/location_pin.svg",
             map: map,
         });
         }
             </script>
             <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi-D4eHl6QueEjhvjnVBoNBUcFbNJRDAo&callback=initMap">
-    </script>
-
-    <script>
-        var x, i, j, selElmnt, a, b, c;
-        /*look for any elements with the class "custom-select":*/
-        x = document.getElementsByClassName("custom-select");
-        for (i = 0; i < x.length; i++) {
-            selElmnt = x[i].getElementsByTagName("select")[0];
-            /*for each element, create a new DIV that will act as the selected item:*/
-            a = document.createElement("DIV");
-            a.setAttribute("class", "select-selected");
-            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-            x[i].appendChild(a);
-            /*for each element, create a new DIV that will contain the option list:*/
-            b = document.createElement("DIV");
-            b.setAttribute("class", "select-items select-hide");
-            for (j = 1; j < selElmnt.length; j++) {
-                /*for each option in the original select element,
-                create a new DIV that will act as an option item:*/
-                c = document.createElement("DIV");
-                c.innerHTML = selElmnt.options[j].innerHTML;
-                c.addEventListener("click", function(e) {
-                    /*when an item is clicked, update the original select box,
-                    and the selected item:*/
-                    var y, i, k, s, h;
-                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-                    h = this.parentNode.previousSibling;
-                    for (i = 0; i < s.length; i++) {
-                    if (s.options[i].innerHTML == this.innerHTML) {
-                        s.selectedIndex = i;
-                        h.innerHTML = this.innerHTML;
-                        y = this.parentNode.getElementsByClassName("same-as-selected");
-                        for (k = 0; k < y.length; k++) {
-                        y[k].removeAttribute("class");
-                        }
-                        this.setAttribute("class", "same-as-selected");
-                        break;
-                    }
-                    }
-                    h.click();
-                });
-                b.appendChild(c);
-            }
-            x[i].appendChild(b);
-            a.addEventListener("click", function(e) {
-                /*when the select box is clicked, close any other select boxes,
-                and open/close the current select box:*/
-                e.stopPropagation();
-                closeAllSelect(this);
-                this.nextSibling.classList.toggle("select-hide");
-                this.classList.toggle("select-arrow-active");
-            });
-        }
-        function closeAllSelect(elmnt) {
-            /*a function that will close all select boxes in the document,
-            except the current select box:*/
-            var x, y, i, arrNo = [];
-            x = document.getElementsByClassName("select-items");
-            y = document.getElementsByClassName("select-selected");
-            for (i = 0; i < y.length; i++) {
-                if (elmnt == y[i]) {
-                arrNo.push(i)
-                } else {
-                y[i].classList.remove("select-arrow-active");
-                }
-            }
-            for (i = 0; i < x.length; i++) {
-                if (arrNo.indexOf(i)) {
-                x[i].classList.add("select-hide");
-                }
-            }
-        }
-        /*if the user clicks anywhere outside the select box,
-        then close all select boxes:*/
-        document.addEventListener("click", closeAllSelect);
     </script>
 </body>
 </html>
