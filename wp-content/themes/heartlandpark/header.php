@@ -37,61 +37,55 @@
 
     .form-container {
         width: 552px;
+    }
 
-        form {
-            margin-top: 45px;
-        }
-        p {
-            margin: 0;
-            padding: 0;
-            width: 80%;
-        }
+    .form-container form {
+        margin-top: 45px;
+    }
+    .form-container p {
+        margin: 0;
+        padding: 0;
+        width: 80%;
+    }
 
-        h1 {
-            padding: 15px 0 10px 0;
-            margin: 0;
-        }
+    .form-container h1 {
+        padding: 15px 0 10px 0;
+        margin: 0;
+    }
 
-        input, select {
-            background: #E8E8E8;
-            border: none; 
-            width: 255px;
-            height: 45px;
-            text-indent: 20px;
-            font-size: 14px;
+    .form-container input, select {
+        background: #E8E8E8;
+        border: none; 
+        width: 255px;
+        height: 45px;
+        text-indent: 20px;
+        font-size: 14px;
 
-            @include input-placeholder {
-                color: $black;
-                opacity: 1; /* Firefox */
-                font-weight: bold;
-            }
-        }
-
-        textarea {
-            grid-column: 1/3;
-            height: 136px;
-            background: #E8E8E8;
-            border: none;
-            text-indent: 20px;
-            font-size: 14px;
-            padding-top: 20px;
-            box-sizing: border-box;
-
-            @include input-placeholder {
-                color: $black;
-                opacity: 1; /* Firefox */
-                font-weight: bold;
-            }
+        @include input-placeholder {
+            color: $black;
+            opacity: 1; /* Firefox */
+            font-weight: bold;
         }
     }
 
-.contact-form {
-    color: $black;
-    font-weight: bold;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 37px;
-}
+    .form-container textarea {
+        grid-column: 1/3;
+        height: 136px;
+        background: #E8E8E8;
+        border: none;
+        text-indent: 20px;
+        font-size: 14px;
+        padding-top: 20px;
+        box-sizing: border-box;
+    }
+
+    .contact-form {
+        color: $black;
+        font-weight: bold;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 37px;
+    }
     </style>
     <?php endif;?>
     <?php wp_head();?>
